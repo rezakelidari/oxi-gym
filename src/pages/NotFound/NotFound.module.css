@@ -1,0 +1,27 @@
+.notFoundMain {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.errorTitle {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.errorDesc {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .errorTitle {
+    font-size: 1.75rem;
+  }
+}
+/* End Responsive */
