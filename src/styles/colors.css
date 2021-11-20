@@ -1,0 +1,5 @@
+:root {
+  --color-primary: rgba(200, 25, 25, 1);
+  --color-primary-shadow: rgba(200, 25, 25, 0.5);
+  --color-primary-shadow-light: rgba(200, 25, 25, 0.25);
+}

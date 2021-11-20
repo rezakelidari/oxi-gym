@@ -15,3 +15,13 @@ body {
   background: #111111;
   color: #ffffff;
 }
+
+#root {
+  overflow-x: hidden;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+}
