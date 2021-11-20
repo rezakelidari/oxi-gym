@@ -1,0 +1,19 @@
+@import url("../../styles/colors.css");
+
+.titleMain {
+  font-size: 2rem;
+  position: relative;
+  padding: 0 1.2rem 0 0;
+}
+
+.titleDot {
+  font-size: 5rem;
+  display: flex;
+  position: absolute;
+  top: 1.25rem;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background: var(--color-primary);
+}
