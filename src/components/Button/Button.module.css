@@ -1,0 +1,29 @@
+@import url("../../styles/colors.css");
+
+.buttonMain {
+  outline: none;
+  border: none;
+  background: var(--color-primary);
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: 0.3s ease all;
+  backdrop-filter: blur(5px);
+}
+
+.buttonMain:hover {
+  color: var(--color-primary);
+  background: rgba(0, 0, 0, 0.25);
+  border: 3px solid var(--color-primary);
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .buttonMain {
+    padding: 0.75rem 1.5rem;
+  }
+}
+/* End Responsive */
