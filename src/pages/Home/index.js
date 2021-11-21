@@ -13,6 +13,7 @@ function Home() {
       <Heading />
       <ForBAndG />
       <Features />
+      <Offer />
     </>
   );
 }
@@ -116,6 +117,22 @@ function Features() {
       </div>
     );
   }
+}
+
+function Offer() {
+  return (
+    <div className={Styles.offerMain}>
+      <div className={Styles.offerContent}>
+        <h3 className={Styles.offerSubHeading}>A big offer for this winter</h3>
+        <h1 className={Styles.offerHeading}>50% OFF</h1>
+        <p className={Styles.offerDesc}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <Button>Join us</Button>
+      </div>
+    </div>
+  );
 }
 
 export default Home;
