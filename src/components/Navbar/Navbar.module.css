@@ -1,10 +1,11 @@
 .navbarMain {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
   padding: 2rem 3rem;
   position: fixed;
-  width: 100%;
   transition: 0.3s ease all;
   z-index: 100;
 }
@@ -14,3 +15,104 @@
   backdrop-filter: blur(5px);
   padding: 1.5rem 2rem;
 }
+
+.navLink {
+  font-size: 1.25rem;
+  transition: 0.3s ease all;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.navLink:hover {
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.navHamburger {
+  display: none;
+}
+
+.navDropDown {
+  display: none;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .navLink {
+    display: none;
+  }
+
+  .navBurger {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background: #ffffff;
+    transition: 0.3s ease all;
+  }
+
+  .navBurger::before {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 2px;
+    top: -0.5rem;
+    background: #ffffff;
+    transition: 0.3s ease all;
+  }
+
+  .navBurger::after {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 2px;
+    bottom: -0.5rem;
+    background: #ffffff;
+    transition: 0.3s ease all;
+  }
+
+  .navBurger.opened {
+    background: transparent;
+  }
+
+  .navBurger.opened::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .navBurger.opened::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+
+  .navDropDown {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.25rem;
+    gap: 1rem;
+    top: -7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: rgba(17, 17, 17, 0.75);
+    transition: 0.3s ease all;
+    opacity: 0;
+  }
+
+  .navDropDown.show {
+    opacity: 1;
+    top: 7rem;
+  }
+
+  .navbarMain.scrolled .navDropDown.show {
+    top: 6rem;
+  }
+}
+/* End Responsive */
