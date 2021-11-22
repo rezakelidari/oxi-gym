@@ -9,6 +9,7 @@
 html {
   font: 15px sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
