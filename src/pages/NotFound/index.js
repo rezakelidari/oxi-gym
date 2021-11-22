@@ -9,7 +9,10 @@ function NotFound() {
       <p className={Styles.errorDesc}>
         The page you are looking for seems does not exist
       </p>
-      <Link to="/">Go to Home page</Link>
+      <br />
+      <Link to="/">
+        <div className={Styles.notFoundLink}>Go to Home page</div>
+      </Link>
     </div>
   );
 }

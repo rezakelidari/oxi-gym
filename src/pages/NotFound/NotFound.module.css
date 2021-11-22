@@ -1,11 +1,11 @@
 .notFoundMain {
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  padding: 3rem;
+  padding: 10rem 3rem 3rem;
 }
 
 .errorTitle {
@@ -16,6 +16,17 @@
 .errorDesc {
   font-size: 1.25rem;
   text-align: center;
+}
+
+.notFoundLink {
+  padding: 1rem 2rem;
+  transition: 0.3s ease all;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.notFoundLink:hover {
+  background: rgba(255, 255, 255, 0.25);
 }
 
 /* Responsive */
