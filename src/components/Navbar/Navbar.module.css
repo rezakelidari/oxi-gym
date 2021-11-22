@@ -28,7 +28,7 @@
   background: rgba(255, 255, 255, 0.15);
 }
 
-.navHamburger {
+.navBurger {
   display: none;
 }
 
@@ -71,6 +71,11 @@
     bottom: -0.5rem;
     background: #ffffff;
     transition: 0.3s ease all;
+  }
+
+  .navbarMain.scrolled .navBurger {
+    top: 2.6rem;
+    left: 2.6rem;
   }
 
   .navBurger.opened {
