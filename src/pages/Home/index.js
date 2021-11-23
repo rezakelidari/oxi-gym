@@ -28,7 +28,7 @@ function Heading() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <Button>Join us</Button>
+        <Button path="/pricing">Join us</Button>
       </div>
     </div>
   );
@@ -43,7 +43,7 @@ function ForBAndG() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <Button>Join us</Button>
+        <Button path="/pricing">Join us</Button>
       </Card>
       <Card className={Styles.forBoys}>
         <h1 className={Styles.forHeading}>For Boys</h1>
@@ -51,7 +51,7 @@ function ForBAndG() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <Button>Join us</Button>
+        <Button path="/pricing">Join us</Button>
       </Card>
     </div>
   );
@@ -129,7 +129,7 @@ function Offer() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <Button>Join us</Button>
+        <Button path="/pricing">Join us</Button>
       </div>
     </div>
   );
