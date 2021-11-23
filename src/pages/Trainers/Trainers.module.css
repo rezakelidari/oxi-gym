@@ -1,0 +1,107 @@
+.trainersMain {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 7rem 0 0 0;
+}
+
+.trainersHeader {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.trainersDesc {
+  width: 400px;
+  font-size: 1.25rem;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.trainersList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 1000px;
+}
+
+.trainerMain {
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2rem;
+}
+
+.trainerAvatar {
+  width: 400px;
+  object-fit: cover;
+}
+
+.trainerBox {
+  position: absolute;
+  top: 22rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  transition: 0.3s ease all;
+  background: rgba(17, 17, 17, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 2rem;
+  width: 90%;
+}
+
+.trainerMain:hover .trainerBox {
+  top: 13rem;
+}
+
+.trainerName {
+  font-size: 1.75rem;
+}
+
+.trainerDesc {
+  font-weight: 100;
+}
+
+.trainerSocial {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socialIcon {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .trainersHeader {
+    font-size: 2rem;
+  }
+
+  .trainersDesc {
+    width: 85%;
+  }
+
+  .trainersList {
+    flex-direction: column;
+  }
+
+  .trainerMain {
+    width: 85vw;
+  }
+
+  .trainerAvatar {
+    width: 85vw;
+    height: 400px;
+  }
+}
+/* End Responsive */
