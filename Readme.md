@@ -7,7 +7,7 @@
     <img src="https://user-images.githubusercontent.com/62962597/143079593-8271d66b-f56c-4b87-86b4-c03a8065eeb3.png" alt="Logo" width="640" height="360">
   </a>
 
-<h1 align="center">Pay+</h1>
+<h1 align="center">Oxy Gym</h1>
   <p align="center">
     A simple project for a gym site implemented with React.js
     <br />
